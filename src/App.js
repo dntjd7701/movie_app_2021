@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 const avengers = [
   {
@@ -12,7 +13,7 @@ function Food({ name, picture }) {
   return (
     <div>
       <h2>{name}</h2>
-      <img src={picture} />
+      <img src={picture} alt={name} />
     </div>
   );
 }
@@ -20,6 +21,11 @@ function Food({ name, picture }) {
 function renderHero(hero) {
   return <Food name={hero.name} picture={hero.picture} />;
 }
+
+Food.propTypes = {
+  name: PropTypes.string.isRequired,
+  picture: PropTypes.string.isRequired,
+};
 
 function App() {
   return <div>{avengers.map(renderHero)}</div>;
