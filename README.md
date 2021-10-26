@@ -17,3 +17,5 @@ gh-pages : github을 통해 정적 페이지를 클라우드에 올려줌
 
 ### fin.
 <strong>주소 : https://dntjd7701.github.io/movie_app_2021</strong>
+
+next: ~27
